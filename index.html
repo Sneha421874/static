@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deploy a Static Website Using GitHub Pages</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #222;
+    }
+
+    header {
+      background: #24292e;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0a58ca;
+      border-left: 5px solid #0a58ca;
+      padding-left: 10px;
+    }
+
+    ol, ul {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    code {
+      background: #eee;
+      padding: 3px 6px;
+      border-radius: 4px;
+      color: #d63384;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #24292e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.3rem;
+        padding: 18px;
+      }
+      .container {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    Deploy a Static Website Using GitHub Pages
+  </header>
+
+  <div class="container">
+
+    <h2>🎯 Objective</h2>
+    <p>Host a simple static website for free using <strong>GitHub Pages</strong>.</p>
+
+    <h2>🛠 Tools Required</h2>
+    <ul>
+      <li>GitHub account</li>
+      <li>Git CLI or GitHub Desktop</li>
+      <li>Any static website files (HTML, CSS, JS, images)</li>
+    </ul>
+
+    <h2>🚀 Steps to Deploy</h2>
+    <ol>
+      <li>
+        <strong>Create a GitHub Repository:</strong>
+        <ul>
+          <li>Go to GitHub → <strong>New repository</strong></li>
+          <li>Name it something like <code>my-website</code></li>
+          <li>Select <strong>Public</strong></li>
+          <li>Click <strong>Create repository</strong></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Add Your Website Files:</strong><br>
+        You may upload manually or push using Git.
+        <pre>
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/your-repo-name.git
+git push -u origin main
+        </pre>
+      </li>
+
+      <li>
+        <strong>Enable GitHub Pages:</strong>
+        <ul>
+          <li>Go to <strong>Settings → Pages</strong></li>
+          <li>Under “Source”, select:
+            <ul>
+              <li>Branch: <code>main</code></li>
+              <li>Folder: <code>/ (root)</code></li>
+            </ul>
+          </li>
+          <li>Click <strong>Save</strong></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Your Site Goes Live!</strong><br>
+        After a few seconds, GitHub provides a link:
+        <p style="background:#eaf4ff;padding:10px;border-radius:8px;">
+          https://your-username.github.io/your-repo-name/
+        </p>
+      </li>
+    </ol>
+
+    <h2>📦 Deliverable</h2>
+    <p>A public GitHub repository with a live website hosted through GitHub Pages.</p>
+
+  </div>
+
+  <footer>
+    © 2025 GitHub Pages Deployment Demo
+  </footer>
+
+</body>
+</html>
